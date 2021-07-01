@@ -1,6 +1,140 @@
 {% extends "base.html" %}
 
 {% block main %}
-<h1 class="page-header">About</h1>
-<p>This webpage is about {{ name }}.</p>
+<!-- <h1 class="page-header">About</h1>
+<p>This webpage is about {{ name }}.</p> -->
+<section class="breadcrumbs-section p-1 p-sm-3"> <!-- responsive padding -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>About</h2>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{{ url_for('home') }}">Home</a></li>
+                    <li class="breadcrump-item active">/About</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-company pt-md-2 pb-md-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>About Company</h2>
+                <hr>
+            </div>
+       
+
+            <div class="col-md-3">
+                <img class="img-fluid" src="{{url_for('static', filename='images/unnamed.png')}}" alt=""> <!-- responsive image -->
+            </div>
+
+            <div class="col-md-9">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis minima dolorum doloremque mollitia culpa excepturi sunt, amet totam praesentium quo odit quisquam sapiente placeat officia vel cupiditate eaque fugit temporibus!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis minima dolorum doloremque mollitia culpa excepturi sunt, amet totam praesentium quo odit quisquam sapiente placeat officia vel cupiditate eaque fugit temporibus!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis minima dolorum doloremque mollitia culpa excepturi sunt, amet totam praesentium quo odit quisquam sapiente placeat officia vel cupiditate eaque fugit temporibus!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home-best p-2 pt-md-4 pb-md-4">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h3>THE BEST IN PORTLAND!</h3>
+        </div>
+    </div>
+</section>
+
+<section class="pt-3 pb-4">
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col text-center">
+                <h3>Our Awesome Team</h3>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img class="img-fluid qualities-img p-5" src="{{url_for('static', filename='images/test.png')}}" alt="Test image">
+                <h5>FirstName LastName</h5>
+                <p>
+                    Position Postition Job Description
+                </p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <img class="img-fluid qualities-img p-5" src="{{url_for('static', filename='images/test1.png')}}" alt="Test image">
+                <h5>FirstName LastName</h5>
+                <p>
+                    Position Postition Job Description
+                </p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <img class="img-fluid qualities-img p-5" src="{{url_for('static', filename='images/test.png')}}" alt="Test image">
+                <h5>FirstName LastName</h5>
+                <p>
+                    Position Postition Job Description
+                </p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <img class="img-fluid qualities-img p-5" src="{{url_for('static', filename='images/test1.png')}}" alt="Test image">
+                <h5>FirstName LastName</h5>
+                <p>
+                    Position Postition Job Description
+                </p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <img class="img-fluid qualities-img p-5" src="{{url_for('static', filename='images/test.png')}}" alt="Test image">
+                <h5>FirstName LastName</h5>
+                <p>
+                    Position Postition Job Description
+                </p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <img class="img-fluid qualities-img p-5" src="{{url_for('static', filename='images/test1.png')}}" alt="Test image">
+                <h5>FirstName LastName</h5>
+                <p>
+                    Position Postition Job Description
+                </p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <img class="img-fluid qualities-img p-5" src="{{url_for('static', filename='images/test.png')}}" alt="Test image">
+                <h5>FirstName LastName</h5>
+                <p>
+                    Position Postition Job Description
+                </p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <img class="img-fluid qualities-img p-5" src="{{url_for('static', filename='images/test1.png')}}" alt="Test image">
+                <h5>FirstName LastName</h5>
+                <p>
+                    Position Postition Job Description
+                </p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <img class="img-fluid qualities-img p-5" src="{{url_for('static', filename='images/test.png')}}" alt="Test image">
+                <h5>FirstName LastName</h5>
+                <p>
+                    Position Postition Job Description
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</section>
 {% endblock %}
